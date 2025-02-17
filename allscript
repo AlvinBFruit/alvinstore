@@ -8,14 +8,14 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
         Key = {
         KeySystem = false,
         Title = "Key System",
-        Description = "Nhập key hộ bố phát",
+        Description = "",
         KeyLink = "",
-        Keys = {"0"},
+        Keys = {"1234"},
         Notifi = {
         Notifications = true,
-        CorrectKey = "Đang chạy, đừng hối",
-       Incorrectkey = "Key sai rồi con ạ",
-       CopyKeyLink = "Copy link"
+        CorrectKey = "Running the Script...",
+       Incorrectkey = "The key is incorrect",
+       CopyKeyLink = "Copied to Clipboard"
       }
     }
   })
