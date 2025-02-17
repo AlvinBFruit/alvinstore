@@ -1,0 +1,105 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+
+       local Window = MakeWindow({
+         Hub = {
+         Title = "AlvinBF",
+         Animation = "Discord: alvinmcvn"
+         },
+        Key = {
+        KeySystem = false,
+        Title = "Key System",
+        Description = "Nhập key hộ bố phát",
+        KeyLink = "",
+        Keys = {"0"},
+        Notifi = {
+        Notifications = true,
+        CorrectKey = "Đang chạy, đừng hối",
+       Incorrectkey = "Key sai rồi con ạ",
+       CopyKeyLink = "Copy link"
+      }
+    }
+  })
+
+       MinimizeButton({
+       Image = "http://www.roblox.com/asset/?id=83190276951914",
+       Size = {60, 60},
+       Color = Color3.fromRGB(10, 10, 10),
+       Corner = true,
+       Stroke = false,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+      })
+      
+------ Tab
+     local Tab1o = MakeTab({Name = "Script Farm"})
+     local Tab2o = MakeTab({Name = "Script Item"})
+     local Tab3o = MakeTab({Name = "Script PVP"})
+     local Tab4o = MakeTab({Name = "Script Sea event"})
+     local Tab5o = MakeTab({Name = "Script V4"})
+     
+------- BUTTON
+    
+    AddButton(Tab1o, {
+     Name = "Redz Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))(Settings)
+  end
+  })
+
+    AddButton(Tab2o, {
+     Name = "W Azure",
+    Callback = function()
+	  getgenv().Team = "Pirates"
+getgenv().AutoLoad = false --Will Load Script On Server Hop
+getgenv().SlowLoadUi  = false
+getgenv().ForceUseSilentAimDashModifier = false --Force turn on silent aim , if error then executor problem
+getgenv().ForceUseWalkSpeedModifier = false --Force turn on Walk Speed Modifier , if error then executor problem
+
+ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+  end
+  })
+
+    AddButton(Tab3o, {
+     Name = "Hit box",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/VanThanhIOS/OniiChanVanThanhIOS/refs/heads/main/oniichanpakavanthanhios"))()
+  end
+  })
+
+    AddButton(Tab3o, {
+     Name = "Aim",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Totocoems/Ace/main/Ace"))()
+  end
+  })
+
+    AddButton(Tab4o, {
+     Name = "Levi",
+    Callback = function()
+	  getgenv().Team = "Pirates"
+getgenv().AutoLoad = false --Will Load Script On Server Hop
+getgenv().SlowLoadUi  = false
+getgenv().ForceUseSilentAimDashModifier = false --Force turn on silent aim , if error then executor problem
+getgenv().ForceUseWalkSpeedModifier = false --Force turn on Walk Speed Modifier , if error then executor problem
+
+ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+  end
+  })
+
+    AddButton(Tab5o, {
+     Name = "Gạt cần",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/diemquy/CutTayHub/refs/heads/main/Cuttayhub-mizu.lua"))()
+  end
+  })
+
+    AddButton(Tab5o, {
+     Name = "Mũ/mảnh",
+    Callback = function()
+	          getgenv().Team = “Pirates”loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AutoDoughking-Rip-byTeddy"))()    
+  end
+  })
